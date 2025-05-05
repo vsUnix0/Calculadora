@@ -1,0 +1,84 @@
+body{
+    position: relative;
+    margin: 0;
+    display: grid;
+    height: 100vh;
+    place-items: center;
+    background: #020024;
+    background: linear-gradient(152deg, rgba(2, 0, 36, 0.97) 0%, rgba(9, 9, 121, 1) 17%, rgba(0, 212, 255, 1) 100%);
+    box-sizing: border-box;
+    font-family: 'Dosis', sans-serif;
+    font-display: swap;
+    
+}
+
+.calculadora{
+    border: 1px solid white;
+    border-radius: 10px;
+    display: grid;
+    place-content: center;
+    height: 430px;
+    width: 400px;
+    gap: 16px;
+    background: rgba( 255, 255, 255, 0.15 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 5px );
+    -webkit-backdrop-filter: blur( 5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.resultado{
+    background-color: white;
+    text-align: right;
+    align-items: center;
+    width: 350px;
+    align-items: center;
+    border-radius: 10px;
+    font-family: inherit;
+    font-size: 35px;
+    overflow: auto;
+    padding: 10px;
+}
+
+.calc-buttons{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    place-content: center;
+}
+
+.calc-button-row{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.calc-button{
+    background: white;
+    border: none;
+    height: 50px;
+    width: 70px;
+    border-radius: 10px;
+    font-family: inherit;
+    font-size: 24px;
+}
+
+.calc-button.double{
+    grid-column: span 2;
+    width: 100%;
+}
+
+.calc-button.equals{
+    grid-column: span 2;
+    width: 100%;
+}
+
+.calc-button:last-child{
+    background: rgb(32, 85, 178);
+}
+
+.calc-button:hover{
+    background: rgba(255, 255, 255, 0.188);
+    color: inherit;
+}
